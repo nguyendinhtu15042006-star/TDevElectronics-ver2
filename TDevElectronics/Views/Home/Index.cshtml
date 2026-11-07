@@ -1,0 +1,310 @@
+﻿@{
+    ViewData["Title"] = "Home";
+}
+
+<section class="pg" id="home">
+    <!-- Hero Banner Slider -->
+    <div class="hero hs" id="hero" role="region" aria-roledescription="carousel" aria-label="Featured">
+        <div class="hsl s1 on" data-i="0">
+            <div class="sbg"></div>
+            <div class="sin">
+                <div class="stx">
+                    <span class="pill w">A little upgrade. A lot of possibility.</span>
+                    <h1>Great tech.<br>Good things ahead.</h1>
+                    <p>Meet the devices that make your everyday better. From one happy upgrade to a whole team’s next chapter.</p>
+                    <a class="bt" asp-controller="Shop" asp-action="Index">Find your next upgrade <svg class="i"><use href="#i-arrow" /></svg></a>
+                    <a class="bw" asp-controller="Home" asp-action="BusinessBuying">Shop for your business</a>
+                    <small>Genuine products · Expert support · Business-ready pricing</small>
+                </div>
+                <div class="hv">
+                    <div class="ph laptop big"></div>
+                    <div class="ph headphones sm"></div>
+                    <div class="cap"><svg class="i"><use href="#i-bolt" /></svg><span><b>MacBook Air M4</b><br>Light on weight. Big on possibility.</span></div>
+                </div>
+            </div>
+        </div>
+
+        <div class="hsl s2" data-i="1">
+            <div class="sbg"></div>
+            <div class="sin">
+                <div class="stx">
+                    <span class="pill w">New season. New favorites.</span>
+                    <h1>Power in your pocket.<br>Every single day.</h1>
+                    <p>Fast, bright and built to keep up with you. Find the phone that fits your life and your budget.</p>
+                    <a class="bt" asp-controller="Shop" asp-action="Index" asp-route-category="Phones">Shop phones <svg class="i"><use href="#i-arrow" /></svg></a>
+                    <a class="bw" asp-controller="Home" asp-action="BusinessBuying">Shop for your business</a>
+                    <small>Genuine products · Expert support · Business-ready pricing</small>
+                </div>
+                <div class="hv">
+                    <div class="ph phone big"></div>
+                    <div class="ph airpods sm"></div>
+                    <div class="cap"><svg class="i"><use href="#i-bolt" /></svg><span><b>Galaxy S25</b><br>Fast. Bright. Always ready.</span></div>
+                </div>
+            </div>
+        </div>
+
+        <div class="hsl s3" data-i="2">
+            <div class="sbg"></div>
+            <div class="sin">
+                <div class="stx">
+                    <span class="pill w">Sound that moves you.</span>
+                    <h1>Less noise.<br>More wow.</h1>
+                    <p>Save $100 on Sony WH-1000XM5. Your favorite playlist deserves this.</p>
+                    <a class="bt" asp-controller="Shop" asp-action="Index" asp-route-category="Audio">Shop audio <svg class="i"><use href="#i-arrow" /></svg></a>
+                    <a class="bw" asp-controller="Home" asp-action="BusinessBuying">Shop for your business</a>
+                    <small>Genuine products · Expert support · Business-ready pricing</small>
+                </div>
+                <div class="hv">
+                    <div class="ph headphones big"></div>
+                    <div class="ph airpods sm"></div>
+                    <div class="cap"><svg class="i"><use href="#i-bolt" /></svg><span><b>Sony WH-1000XM5</b><br>Quiet the world. Hear every detail.</span></div>
+                </div>
+            </div>
+        </div>
+
+        <div class="hsl s4" data-i="3">
+            <div class="sbg"></div>
+            <div class="sin">
+                <div class="stx">
+                    <span class="pill w">Built for the working day.</span>
+                    <h1>Sit well.<br>Print fast. Work better.</h1>
+                    <p>Ergonomic furniture and reliable printers that keep your whole office productive.</p>
+                    <a class="bt" asp-controller="Shop" asp-action="Index" asp-route-category="Office-Furniture">Shop office furniture <svg class="i"><use href="#i-arrow" /></svg></a>
+                    <a class="bw" asp-controller="Home" asp-action="BusinessBuying">Shop for your business</a>
+                    <small>Genuine products · Expert support · Business-ready pricing</small>
+                </div>
+                <div class="hv">
+                    <div class="ph chair big"></div>
+                    <div class="ph printer sm"></div>
+                    <div class="cap"><svg class="i"><use href="#i-bolt" /></svg><span><b>Ergohuman Elite Mesh Chair</b><br>Comfort for the whole workday.</span></div>
+                </div>
+            </div>
+        </div>
+
+        <div class="hsl s5" data-i="4">
+            <div class="sbg"></div>
+            <div class="sin">
+                <div class="stx">
+                    <span class="pill w">TDev for business</span>
+                    <h1>Big ideas need<br>great tools.</h1>
+                    <p>Equip 10 people or 1,000. Get tailored quotes, volume savings and a real person who knows your business.</p>
+                    <a class="bt" asp-controller="Home" asp-action="BusinessBuying">Request a bulk quote <svg class="i"><use href="#i-arrow" /></svg></a>
+                    <a class="bw" asp-controller="Home" asp-action="BusinessBuying">How business buying works</a>
+                    <small>Genuine products · Expert support · Business-ready pricing</small>
+                </div>
+                <div class="hv">
+                    <div class="ph hub big"></div>
+                    <div class="ph laptop sm"></div>
+                    <div class="cap"><svg class="i"><use href="#i-bolt" /></svg><span><b>Anker 565 USB-C Hub</b><br>One hub. Every device connected.</span></div>
+                </div>
+            </div>
+        </div>
+
+        <button type="button" class="hn hp" aria-label="Previous slide">‹</button>
+        <button type="button" class="hn hx2" aria-label="Next slide">›</button>
+        
+        <div class="hdots">
+            <button type="button" class="hdot on" data-go="0" aria-label="Slide 1"></button>
+            <button type="button" class="hdot" data-go="1" aria-label="Slide 2"></button>
+            <button type="button" class="hdot" data-go="2" aria-label="Slide 3"></button>
+            <button type="button" class="hdot" data-go="3" aria-label="Slide 4"></button>
+            <button type="button" class="hdot" data-go="4" aria-label="Slide 5"></button>
+        </div>
+        <div class="hbar"><i></i></div>
+    </div>
+
+    <!-- Trust Badges -->
+    <div class="trust">
+        <div><span class="ib"><svg class="i"><use href="#i-shield" /></svg></span><span><b>100% genuine</b><br><small>Manufacturer-backed warranty</small></span></div>
+        <div><span class="ib"><svg class="i"><use href="#i-truck" /></svg></span><span><b>Free delivery</b><br><small>On orders over $500</small></span></div>
+        <div><span class="ib"><svg class="i"><use href="#i-undo" /></svg></span><span><b>Easy returns</b><br><small>30 days to find your fit</small></span></div>
+        <div><span class="ib"><svg class="i"><use href="#i-layers" /></svg></span><span><b>Better in bulk</b><br><small>Team pricing from 10 units</small></span></div>
+    </div>
+
+    <!-- Categories Grid -->
+    <h2>Find your kind of tech</h2>
+    <div class="g6">
+        <a class="tile t1" asp-controller="Shop" asp-action="Index" asp-route-category="Phones"><svg class="i"><use href="#i-phone" /></svg><b>Phones</b><small>42 products →</small></a>
+        <a class="tile t2" asp-controller="Shop" asp-action="Index" asp-route-category="Laptops"><svg class="i"><use href="#i-laptop" /></svg><b>Laptops</b><small>28 products →</small></a>
+        <a class="tile t3" asp-controller="Shop" asp-action="Index" asp-route-category="Audio"><svg class="i"><use href="#i-headphones" /></svg><b>Audio</b><small>34 products →</small></a>
+        <a class="tile t1" asp-controller="Shop" asp-action="Index" asp-route-category="Office-Furniture"><svg class="i"><use href="#i-chair" /></svg><b>Office Furniture</b><small>16 products →</small></a>
+        <a class="tile t2" asp-controller="Shop" asp-action="Index" asp-route-category="Printers"><svg class="i"><use href="#i-printer" /></svg><b>Printers</b><small>12 products →</small></a>
+        <a class="tile t3" asp-controller="Shop" asp-action="Index" asp-route-category="Accessories"><svg class="i"><use href="#i-plug" /></svg><b>Accessories</b><small>16 products →</small></a>
+    </div>
+
+    <!-- Product Highlights -->
+    <div class="hx">
+        <h2>Your next favorites</h2>
+        <a class="bo" asp-controller="Shop" asp-action="Index">Explore all products <svg class="i"><use href="#i-arrow" /></svg></a>
+    </div>
+
+    <div class="g4">
+        <div class="pc" data-k="laptop">
+            <a class="ph laptop" asp-controller="Shop" asp-action="Product" asp-route-id="macbook-air-m4"><svg class="i hr"><use href="#i-heart" /></svg></a>
+            <small class="br">APPLE</small>
+            <b>MacBook Air M4</b>
+            <p class="sp">13.6-inch · 16GB / 256GB · Sky blue<br><span class="st">★</span> 4.9 (128)</p>
+            <h3 class="pr">$1,099.00</h3>
+            <span class="tg">In stock</span>
+            <a class="bx" asp-controller="Shop" asp-action="Product" asp-route-id="macbook-air-m4">Add to Cart</a>
+        </div>
+
+        <div class="pc" data-k="headphones">
+            <a class="ph headphones" asp-controller="Shop" asp-action="Product" asp-route-id="wh-1000xm5"><svg class="i hr"><use href="#i-heart" /></svg></a>
+            <small class="br">SONY</small>
+            <b>WH-1000XM5</b>
+            <p class="sp">Wireless · Noise cancelling · Black<br><span class="st">★</span> 4.8 (246)</p>
+            <h3 class="pr">$249.00</h3>
+            <span class="tg">In stock</span>
+            <a class="bx" asp-controller="Shop" asp-action="Product" asp-route-id="wh-1000xm5">Add to Cart</a>
+        </div>
+
+        <div class="pc" data-k="hub">
+            <a class="ph hub" asp-controller="Shop" asp-action="Product" asp-route-id="anker-565-hub"><svg class="i hr"><use href="#i-heart" /></svg></a>
+            <small class="br">ANKER</small>
+            <b>565 USB-C Hub</b>
+            <p class="sp">11-in-1 · 100W pass-through · Gray<br><span class="st">★</span> 4.7 (92)</p>
+            <h3 class="pr">$79.00</h3>
+            <span class="tg">In stock</span>
+            <a class="bx" asp-controller="Shop" asp-action="Product" asp-route-id="anker-565-hub">Add to Cart</a>
+        </div>
+
+        <div class="pc" data-k="phone">
+            <a class="ph phone" asp-controller="Shop" asp-action="Product" asp-route-id="galaxy-s25"><svg class="i hr"><use href="#i-heart" /></svg></a>
+            <small class="br">SAMSUNG</small>
+            <b>Galaxy S25</b>
+            <p class="sp">256GB · 5G · Icy blue<br><span class="st">★</span> 4.8 (174)</p>
+            <h3 class="pr">$799.00</h3>
+            <span class="tg">In stock</span>
+            <a class="bx" asp-controller="Shop" asp-action="Product" asp-route-id="galaxy-s25">Add to Cart</a>
+        </div>
+
+        <div class="pc" data-k="airpods">
+            <a class="ph airpods" asp-controller="Shop" asp-action="Product" asp-route-id="airpods-pro-2"><svg class="i hr"><use href="#i-heart" /></svg></a>
+            <small class="br">APPLE</small>
+            <b>AirPods Pro 2</b>
+            <p class="sp">USB-C · Active noise cancellation<br><span class="st">★</span> 4.9 (318)</p>
+            <h3 class="pr">$199.00</h3>
+            <span class="tg">In stock</span>
+            <a class="bx" asp-controller="Shop" asp-action="Product" asp-route-id="airpods-pro-2">Add to Cart</a>
+        </div>
+
+        <div class="pc" data-k="printer">
+            <a class="ph printer" asp-controller="Shop" asp-action="Product" asp-route-id="hp-laserjet-m404dn"><svg class="i hr"><use href="#i-heart" /></svg></a>
+            <small class="br">HP</small>
+            <b>HP LaserJet Pro M404dn</b>
+            <p class="sp">Mono laser · 38 ppm · Duplex · Ethernet<br><span class="st">★</span> 4.9 (63)</p>
+            <h3 class="pr">$249.00</h3>
+            <span class="tg">In stock</span>
+            <a class="bx" asp-controller="Shop" asp-action="Product" asp-route-id="hp-laserjet-m404dn">Add to Cart</a>
+        </div>
+
+        <div class="pc" data-k="chair">
+            <a class="ph chair" asp-controller="Shop" asp-action="Product" asp-route-id="ergohuman-elite"><svg class="i hr"><use href="#i-heart" /></svg></a>
+            <small class="br">ERGOHUMAN</small>
+            <b>Ergohuman Elite Mesh Chair</b>
+            <p class="sp">Mesh back · Headrest · 4D armrests<br><span class="st">★</span> 4.6 (112)</p>
+            <h3 class="pr">$529.00</h3>
+            <span class="tg a">Only 8 left</span>
+            <a class="bx" asp-controller="Shop" asp-action="Product" asp-route-id="ergohuman-elite">Add to Cart</a>
+        </div>
+
+        <div class="pc" data-k="iphone-16-pro">
+            <a class="ph iphone-16-pro" asp-controller="Shop" asp-action="Product" asp-route-id="iphone-16-pro"><svg class="i hr"><use href="#i-heart" /></svg></a>
+            <small class="br">APPLE</small>
+            <b>iPhone 16 Pro</b>
+            <p class="sp">256GB · Titanium · 48MP camera<br><span class="st">★</span> 4.9 (101)</p>
+            <h3 class="pr">$999.00</h3>
+            <span class="tg">In stock</span>
+            <a class="bx" asp-controller="Shop" asp-action="Product" asp-route-id="iphone-16-pro">Add to Cart</a>
+        </div>
+
+        <div class="pc" data-k="macbook-pro-14">
+            <a class="ph macbook-pro-14" asp-controller="Shop" asp-action="Product" asp-route-id="macbook-pro-14-m4"><svg class="i hr"><use href="#i-heart" /></svg></a>
+            <small class="br">APPLE</small>
+            <b>MacBook Pro 14 M4</b>
+            <p class="sp">14.2-inch · 16GB / 512GB · Space black<br><span class="st">★</span> 4.9 (138)</p>
+            <h3 class="pr">$1,599.00</h3>
+            <span class="tg">In stock</span>
+            <a class="bx" asp-controller="Shop" asp-action="Product" asp-route-id="macbook-pro-14-m4">Add to Cart</a>
+        </div>
+
+        <div class="pc" data-k="wf-1000xm5">
+            <a class="ph wf-1000xm5" asp-controller="Shop" asp-action="Product" asp-route-id="sony-wf-1000xm5"><svg class="i hr"><use href="#i-heart" /></svg></a>
+            <small class="br">SONY</small>
+            <b>Sony WF-1000XM5</b>
+            <p class="sp">Noise cancelling · 8h battery<br><span class="st">★</span> 4.8 (200)</p>
+            <h3 class="pr">$299.00</h3>
+            <span class="tg">In stock</span>
+            <a class="bx" asp-controller="Shop" asp-action="Product" asp-route-id="sony-wf-1000xm5">Add to Cart</a>
+        </div>
+
+        <div class="pc" data-k="power-bank-737">
+            <a class="ph power-bank-737" asp-controller="Shop" asp-action="Product" asp-route-id="anker-737-powerbank"><svg class="i hr"><use href="#i-heart" /></svg></a>
+            <small class="br">ANKER</small>
+            <b>Anker 737 Power Bank</b>
+            <p class="sp">24,000mAh · 140W · Smart display<br><span class="st">★</span> 4.7 (138)</p>
+            <h3 class="pr">$109.00</h3>
+            <span class="tg">In stock</span>
+            <a class="bx" asp-controller="Shop" asp-action="Product" asp-route-id="anker-737-powerbank">Add to Cart</a>
+        </div>
+
+        <div class="pc" data-k="hero13">
+            <a class="ph hero13" asp-controller="Shop" asp-action="Product" asp-route-id="gopro-hero13"><svg class="i hr"><use href="#i-heart" /></svg></a>
+            <small class="br">GOPRO</small>
+            <b>GoPro HERO13</b>
+            <p class="sp">5.3K · Waterproof · HyperSmooth<br><span class="st">★</span> 4.7 (52)</p>
+            <h3 class="pr">$399.00</h3>
+            <span class="tg">In stock</span>
+            <a class="bx" asp-controller="Shop" asp-action="Product" asp-route-id="gopro-hero13">Add to Cart</a>
+        </div>
+    </div>
+
+    <!-- Deal of the week -->
+    <div class="deal">
+        <div>
+            <small class="co">THIS WEEK’S SOUND UPGRADE</small>
+            <h2>Less noise. More wow.</h2>
+            <p class="m">Save $100 on Sony WH-1000XM5. Your favorite playlist deserves this.</p>
+            <a class="bt" asp-controller="Shop" asp-action="Product" asp-route-id="wh-1000xm5" data-p="headphones">Shop the $249 deal <svg class="i"><use href="#i-arrow" /></svg></a>
+        </div>
+        <div class="ph headphones"><span class="dl-tag">-$100</span></div>
+    </div>
+
+    <!-- Business Section -->
+    <div class="biz">
+        <div>
+            <small class="pc2">TDEV FOR BUSINESS</small>
+            <h2>Big ideas need great tools.</h2>
+            <p class="m">Equip 10 people or 1,000. Get tailored quotes, volume savings and a real person who knows your business.</p>
+            <a class="bt" asp-controller="Home" asp-action="BusinessBuying">Request a bulk quote <svg class="i"><use href="#i-arrow" /></svg></a>
+            <a class="bo" asp-controller="Home" asp-action="BusinessBuying">How business buying works</a>
+        </div>
+        <ul>
+            <li><svg class="i"><use href="#i-check" /></svg>Up to 12% volume savings</li>
+            <li><svg class="i"><use href="#i-check" /></svg>One coordinated delivery</li>
+            <li><svg class="i"><use href="#i-check" /></svg>Tax invoices &amp; purchase orders</li>
+            <li><svg class="i"><use href="#i-check" /></svg>A dedicated account specialist</li>
+        </ul>
+    </div>
+
+    <!-- Reviews / Expert Support -->
+    <div class="g2">
+        <div class="cd">
+            <h3>Loved by people. Trusted by teams.</h3>
+            <p class="stars">★★★★★</p>
+            <p>“From choosing our laptops to delivery day, TDev made our team rollout feel effortless.”</p>
+            <div class="who"><span class="av">AM</span><small class="m">Alex Morgan · Procurement Manager, Northstar Labs</small></div>
+        </div>
+        <div class="cd">
+            <h3>Good tech, human support</h3>
+            <p class="m">Not sure what fits? Our experts help you compare devices without the jargon.</p>
+            <a class="bo" asp-controller="Home" asp-action="Support">Talk to a tech expert <svg class="i"><use href="#i-chat" /></svg></a>
+        </div>
+    </div>
+</section>
+
+@section Scripts {
+    <script src="~/js/hero.js" asp-append-version="true"></script>
+    <script src="~/js/home-products.js" asp-append-version="true"></script>
+}
